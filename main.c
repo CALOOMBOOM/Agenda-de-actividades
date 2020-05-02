@@ -78,7 +78,7 @@ void agregaractividad(){
     scanf("%d",&nuevo->infor.dia);
     printf("\nAgregar el mes de la actividad: ");
     scanf("%d",&nuevo->infor.mes);
-    printf("\nAgregar el año de la actividad: ");
+    printf("\nAgregar el aÃ±o de la actividad: ");
     scanf("%d",&nuevo->infor.year);
     fflush(stdin);
     printf("\nIngrese la hora de la actividad (00.00.00): ");
@@ -87,7 +87,7 @@ void agregaractividad(){
     printf("\nIngrese el lugar de la actividad: ");
     gets(nuevo->infor.lugar);
     fflush(stdin);
-    printf("\nIngrese que hará en dicha actividad: ");
+    printf("\nIngrese que harÃ¡ en dicha actividad: ");
     gets(nuevo->infor.actividad);
     fflush(stdin);
     if(primero==NULL){
@@ -122,7 +122,7 @@ void listadeactividades(){
             aux=aux->siguiente;
         }while(aux!=primero);
     }else{
-    printf("La agenda se encuentra vacía \n");
+    printf("La agenda se encuentra vacÃ­a \n");
     }
 
 }
@@ -192,7 +192,7 @@ void buscar(){
         printf("Nodo no encontrado\n");
     }
     }else{
-    printf("La lista se encuentra vacía\n");
+    printf("La lista se encuentra vacÃ­a\n");
     }
 
 }
@@ -240,7 +240,7 @@ void eliminarevento(){
 
                 //anterior=actual;
                 //actual=actual->siguiente;
-
+                //comentadas porque si las hago que funcionen, cuando elimino el las fechas de la siguiente actividad se  cambian a direcciones
 
         }while(actual!=primero && encontrado!=1);
 
@@ -252,7 +252,7 @@ void eliminarevento(){
 
 
     }else{
-    printf("La lista se encuentra vacía\n");
+    printf("La lista se encuentra vacÃ­a\n");
     }
 
 }
